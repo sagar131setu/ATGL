@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(to right, #387ea3, #006db6, #8e278f, #b24460);
+  width: 100%;
+  height: 48px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .header-logo {
+    width: 372.56px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  // .nav-links {
+  //     display: flex;
+  //     gap: 10px;
+
+  //     button {
+  //         background: white;
+  //         border: none;
+  //         padding: 5px 10px;
+  //         border-radius: 5px;
+  //         cursor: pointer;
+  //     }
+
+  //     .compare-btn {
+  //         background: #0055ff;
+  //         color: white;
+  //     }
+  // }
+}

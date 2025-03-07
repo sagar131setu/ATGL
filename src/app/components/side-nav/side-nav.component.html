@@ -1,0 +1,68 @@
+<aside class="side-nav">
+    <div class="side-nav-container">
+        <ul class="sub-menu">
+            <li class="menu-item" [class.active]="currentRoute === '/business-development'">
+                <img src="assets/business-development.png" alt="Business Development" class="nav-icon" />
+                <span>Business Development</span>
+            </li>
+
+            <!-- Projects Menu -->
+            <li class="menu-item clickable" (click)="toggleProjectsMenu()">
+                <img src="assets/projects.png" alt="Projects" class="nav-icon" />
+                <span>Projects</span>
+                <img src="assets/Vector.png" alt="Expand" class="expand-icon" [class.rotate]="isProjectsExpanded" />
+            </li>
+
+
+            <!-- Sub-menu -->
+            <ul *ngIf="isProjectsExpanded" class="sub-menu">
+                <li [class.active]="currentRoute === '/project-progress'">
+                    <a routerLink="/project-progress" routerLinkActive="active"
+                        (click)="setActiveRoute('/project-progress')">
+                        Project Progress
+                    </a>
+                </li>
+                <li [class.active]="currentRoute === '/permissions'">
+                    <a routerLink="/permissions" routerLinkActive="active" (click)="setActiveRoute('/permissions')">
+                        Permissions
+                    </a>
+                </li>
+            </ul>
+
+            <li class="menu-item" routerLink="/operations" routerLinkActive="active"
+                [class.active]="currentRoute === '/operations'">
+                <img src="assets/operation.png" alt="Operations & Maintenance" class="nav-icon" />
+                <span>Operations & Maintenance</span>
+            </li>
+
+            <li class="menu-item" routerLink="/customer-service" routerLinkActive="active"
+                [class.active]="currentRoute === '/customer-service'">
+                <img src="assets/customer-service.png" alt="Customer Service" class="nav-icon" />
+                <span>Customer Service</span>
+            </li>
+
+            <li class="menu-item" routerLink="/ehs" routerLinkActive="active" [class.active]="currentRoute === '/ehs'">
+                <img src="assets/ehs.png" alt="EHS" class="nav-icon" />
+                <span>EHS</span>
+            </li>
+
+            <li class="menu-item" routerLink="/finance" routerLinkActive="active"
+                [class.active]="currentRoute === '/finance'">
+                <img src="assets/finance.png" alt="Finance" class="nav-icon" />
+                <span>Finance</span>
+            </li>
+
+            <li class="menu-item" routerLink="/techno-commercials" routerLinkActive="active"
+                [class.active]="currentRoute === '/techno-commercials'">
+                <img src="assets/techno.png" alt="Techno Commercials" class="nav-icon" />
+                <span>Techno Commercials</span>
+            </li>
+
+            <li class="menu-item" routerLink="/hr-admin" routerLinkActive="active"
+                [class.active]="currentRoute === '/hr-admin'">
+                <img src="assets/hr-admin.png" alt="HR & Admin" class="nav-icon" />
+                <span>HR & Admin</span>
+            </li>
+        </ul>
+    </div>
+</aside>

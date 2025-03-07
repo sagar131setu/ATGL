@@ -1,0 +1,121 @@
+.side-nav {
+  width: 242px;
+  height: calc(100vh - 48px) !important;
+  background: #ffffff;
+  padding: 12px 0;
+  position: fixed;
+  top: 48px;
+  left: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.15);
+  color: black;
+  justify-content: center;
+}
+
+.side-nav-container {
+  width: 226px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 8px;
+}
+
+.side-nav-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 8px;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #040404;
+  width: calc(226px - 16px);
+  height: 36px;
+}
+
+.menu-item:hover {
+  background: rgba(13, 103, 202, 0.1);
+}
+
+.menu-item.active {
+  background: #0d67ca !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.menu-item.active img {
+  filter: brightness(0) invert(1);
+}
+
+.sub-menu {
+  padding-left: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  color: #040404;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sub-menu li {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  width: calc(226px - 16px);
+  height: 36px;
+  border-radius: 4px;
+}
+
+.sub-menu li a {
+  text-decoration: none !important;
+  color: #7f8286;
+  display: block;
+  padding: 6px 8px;
+  padding-left: 35px;
+  width: 100%;
+}
+
+.sub-menu li.active {
+  background: #0d67ca !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.sub-menu li.active a {
+  color: white !important;
+}
+
+.sub-menu li:hover {
+  background: rgba(13, 103, 202, 0.1);
+}
+
+.expand-icon {
+  width: 24px; /* Matches Figma width */
+  height: 24px; /* Matches Figma height */
+  transition: transform 0.3s ease-in-out;
+  padding-left: 90px;
+}
+
+/* Rotate icon when menu is expanded */
+.rotate {
+  transform: scaleY(-1);
+}
+
+.nav-icon {
+  // width: 16px;
+  // height: 20px;
+  // top: 2px;
+  // left: 4px;
+  color: #212121;
+}
