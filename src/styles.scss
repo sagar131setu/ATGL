@@ -11,3 +11,11 @@ html, body {
     height: 100%;
     overflow: auto;
   }
+
+/* Hide the scrollbar in the Power BI report */
+.scrollbar-inner > .scroll-element .scroll-bar {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+

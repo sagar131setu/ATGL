@@ -1,0 +1,10 @@
+.powerbi-container {
+  overflow: hidden !important;
+  width: calc(100vw - 300px) !important;
+  height: calc(100vh - 48px) !important;
+  display: flex;
+  flex-direction: column;
+  margin-top: -4px;
+}
+
+

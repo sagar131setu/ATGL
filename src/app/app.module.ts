@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { ProjectProgressComponent } from './components/project-progress/project-progress.component';
 import { PermissionsComponent } from './components/permissions/permissions.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PermissionsComponent } from './components/permissions/permissions.compo
     HeaderComponent,
     SideNavComponent,
     ProjectProgressComponent,
-    PermissionsComponent
+    PermissionsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
